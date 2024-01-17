@@ -1,0 +1,350 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-family: "Mulish", sans-serif;
+  }
+  :root {
+    --main-font: "Mulish", sans-serif;
+    --second-font: "Inter", sans-serif;
+    --main-color: #ff5400;
+    --heading-color: #131318;
+    --text-color: rgba(19, 19, 24, 0.7);
+  }
+  /* Header section styles */
+  
+  .header-section {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .logo-section {
+    display: flex;
+    width: 30%;
+    gap: 20px;
+    cursor: pointer;
+  }
+  .logo-section img {
+    width: 48px;
+  }
+  .logo-title {
+    font-size: 36px;
+    font-family: var(--main-font);
+    color: var(--heading-color);
+    font-weight: 800;
+  }
+  .logo-section:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+  }
+  .menu ul i {
+    color: white;
+  }
+  
+  .menu ul {
+    display: flex;
+    gap: 44px;
+  }
+  .menu ul a {
+    text-decoration: none;
+    color: #424247;
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .menu ul a:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.3);
+  }
+  
+  /* Banner section styles */
+  .banner {
+    background: linear-gradient(
+        180deg,
+        rgba(19, 19, 24, 0.8) 0%,
+        rgba(7, 2, 17, 0) 100%
+      ),
+      url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .banner .banner-title {
+    color: white;
+    font-family: var(--main-font);
+    font-size: 64px;
+    font-weight: 800;
+    padding-top: 106px;
+  }
+  .banner .banner-text {
+    color: white;
+    width: 676px;
+    margin: 0 auto;
+    font-family: var(--main-font);
+    line-height: 26px;
+    text-align: center;
+    padding: 0;
+  }
+  .location-search {
+    display: flex;
+    margin: 48px auto auto auto;
+    width: 70%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .location-search input,
+  #pet-select,
+  .search-btn {
+    color: rgba(19, 19, 24, 0.5);
+    font-family: var(--main-font);
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    width: 174px;
+    height: 52px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: block;
+  }
+  .search-btn {
+    display: flex;
+    background-color: var(--main-color);
+    color: #fff;
+    align-items: center;
+  }
+  
+  /* Our Popular Tours section styles */
+  .Popular-Tours {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+  }
+  .Tours-text-section {
+    width: 50%;
+  }
+  .tours-images {
+    display: block;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    margin-left: 53px;
+  }
+  .tours-images img {
+    width: 100%;
+  }
+  .common-title {
+    color: var(--heading-color);
+    font-family: var(--main-font);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+  
+  .tours-text {
+    color: rgba(19, 19, 24, 0.7);
+    font-family: var(--main-font);
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+  .tours-text ul li {
+    color: rgba(19, 19, 24, 0.7);
+    font-family: var(--main-font);
+    line-height: 26px;
+  }
+  .common-btn {
+    border-radius: 8px;
+    background: #ff5400;
+    width: 174px;
+    height: 52px;
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .common-btn:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+    background-color: var(--heading-color);
+  }
+  
+  /* Choose Your Destination section */
+  .Destination-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .popular {
+    align-items: center;
+    text-align: center;
+  }
+  .popular-text {
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .container {
+    margin-top: 48px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 24px 24px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Maldives Maldives Maldives Indonesia Indonesia Indonesia"
+      "Srilanka Srilanka North-America North-America Kashmir Kashmir"
+      "Bangladesh Bangladesh Bandarban Bandarban Bandarban Bandarban";
+  }
+  .container img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  .Maldives {
+    grid-area: Maldives;
+  }
+  
+  .Indonesia {
+    grid-area: Indonesia;
+  }
+  
+  .Srilanka {
+    grid-area: Srilanka;
+  }
+  
+  .North-America {
+    grid-area: North-America;
+  }
+  
+  .Kashmir {
+    grid-area: Kashmir;
+  }
+  
+  .Bangladesh {
+    grid-area: Bangladesh;
+  }
+  
+  .Bandarban {
+    grid-area: Bandarban;
+  }
+  /* Why Choose Us section */
+  .travel-card {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .travel-card-secton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 24px;
+    align-items: center;
+    align-items: center;
+    margin-top: 48px;
+  }
+  .Handpicked-Hotels {
+    flex-basis: 573px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 32px 79px 32px 32px;
+  }
+  .card-two {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    background: rgba(41, 206, 246, 0.05);
+  }
+  .card-three {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    background: rgba(233, 68, 68, 0.05);
+  }
+  .Handpicked-title {
+    font-family: var(--main-font);
+    color: var(--heading-color);
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .card-text {
+    font-family: var(--main-font);
+    color: #5a5a5d;
+    line-height: 26px;
+  }
+  
+  /* Discount section styles */
+  
+  .discount {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .discount-banner-image {
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+    height: 600px;
+    background-image: url(../Images/Group\ 39.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    padding-right: 56px;
+  }
+  .price-table {
+    width: 40%;
+    height: 320px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    /* margin: 56px 56px 56px auto; */
+    text-align: start;
+    padding: 50px;
+  }
+  .icon-ber {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .time {
+    color: #5a5a5d;
+    font-family: Mulish;
+  }
+  .price-title {
+    color: #ff5400;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .price-table .card-text{
+    width: 452px;
+  }
+  .footer{
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
